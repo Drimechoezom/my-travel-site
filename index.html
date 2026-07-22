@@ -1,111 +1,179 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>我的旅行日记</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吃米的旅行日记 · Travel Log</title>
+  <meta name="description" content="吃米的双语个人旅行日记与摄影集，记录全球目的地的风景、故事与成长心得。">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
-
-
 <body>
 
+  <!-- Top Navigation (top-nav) -->
+  <header class="top-nav">
+    <div class="container top-nav-inner">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">✈️</div>
+        <span data-zh="吃米的旅行日记" data-en="Chimi's Travel Log">吃米的旅行日记</span>
+      </a>
 
-<header class="hero">
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-zh="首页" data-en="Home">首页</a></li>
+        <li><a href="#stories" class="nav-link" data-zh="旅行故事" data-en="Travel Stories">旅行故事</a></li>
+        <li><a href="#about" class="nav-link" data-zh="关于我" data-en="About Me">关于我</a></li>
+      </ul>
 
-<h1>
-我的旅行日记
-</h1>
+      <div class="nav-actions">
+        <!-- Bilingual Language Toggle Button -->
+        <button id="lang-toggle-btn" class="lang-toggle-btn" title="Switch Language / 切换语言">
+          🌐 <span id="lang-zh" class="active">中文</span> / <span id="lang-en">EN</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
 
-<p>
-记录路上的风景，也记录自己的成长。
-</p>
+  <!-- Hero Band (hero-band & hero-wide-card) -->
+  <section id="hero" class="hero-band">
+    <div class="container hero-layout-cinematic">
+      <div class="hero-header-row">
+        <h1 data-zh="记录路上的风景，<br>也记录自己的成长。" data-en="Capturing moments,<br>wandering the world.">
+          记录路上的风景，<br>也记录自己的成长。
+        </h1>
+        <div class="hero-buttons">
+          <a href="#stories" class="btn btn-primary" data-zh="浏览旅行故事 ➔" data-en="Explore Stories ➔">浏览旅行故事 ➔</a>
+          <a href="#about" class="btn btn-secondary" data-zh="了解关于我" data-en="About Me">了解关于我</a>
+        </div>
+      </div>
 
-</header>
+      <!-- Hero Widescreen Photography Showcase Card -->
+      <div class="hero-wide-card">
+        <img src="assets/hero.jpg" alt="Chimi Sunset Silhouette Travel Photography" class="hero-wide-img">
+      </div>
+    </div>
+  </section>
 
+  <!-- Category Filter Sub-Nav (category-tab) -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-nav">
+        <button class="category-tab active" data-filter="all" data-zh="全部目的地" data-en="All Destinations">全部目的地</button>
+        <button class="category-tab" data-filter="tibet" data-zh="藏地 · Tibet" data-en="Tibet">藏地 · Tibet</button>
+        <button class="category-tab" data-filter="mainland" data-zh="内地 · Mainland" data-en="Mainland China">内地 · Mainland</button>
+        <button class="category-tab" data-filter="shanghai" data-zh="上海 · Shanghai" data-en="Shanghai">上海 · Shanghai</button>
+        <button class="category-tab" data-filter="japan" data-zh="日本 · Japan" data-en="Japan">日本 · Japan</button>
+      </div>
+    </div>
+  </section>
 
+  <!-- Travel Stories Section (Image-Led Masonry Waterfall Stream) -->
+  <section id="stories" class="travel-grid-section">
+    <div class="container">
+      <div id="travel-waterfall" class="travel-waterfall">
+        <!-- Dynamically rendered from data/stories.json -->
+      </div>
+    </div>
+  </section>
 
-<section class="photo">
+  <!-- About Section (about-section) -->
+  <section id="about" class="container">
+    <div class="about-section">
+      <div class="container about-grid">
+        <div class="about-avatar-card">
+          <div class="avatar-large">📸</div>
+          <h3 data-zh="吃米 Chimi" data-en="Chimi">吃米 Chimi</h3>
+          <p data-zh="独立摄影师 / 独立撰稿人" data-en="Travel Photographer & Writer">独立摄影师 / 独立撰稿人</p>
+          <div class="social-pills">
+            <span class="social-pill">📷 Leica M</span>
+            <span class="social-pill">🎬 Film Photography</span>
+          </div>
+        </div>
 
-<img src="https://picsum.photos/900/1200">
+        <div class="about-content">
+          <h2 data-zh="用照片收藏遇见，<br>用文字记录感悟。" data-en="Treasuring encounters through photos,<br>recording growth through words.">
+            用照片收藏遇见，<br>用文字记录感悟。
+          </h2>
+          <p data-zh="Hi，我是吃米。喜欢旅行、电影与音乐，希望用镜头与文字，收藏每一次与世界的温柔相遇。我认为旅行最动人的地方，不是去过多少热门打卡点，而是在未知的旷野里重新找回好奇心。无论是极光下的凛风，还是路边小店的一杯特调，都构成了我生命的独特底色。"
+             data-en="Hi, I'm Chimi. Lover of travel, cinema, and music. Collecting gentle encounters with the world through photography and words. I believe the most captivating aspect of travel is not ticking off tourist destinations, but rediscovering wonder in wide open lands. Every aurora wind and street café espresso forms the unique color of my story.">
+            Hi，我是吃米。喜欢旅行、电影与音乐，希望用镜头与文字，收藏每一次与世界的温柔相遇。我认为旅行最动人的地方，不是去过多少热门打卡点，而是在未知的旷野里重新找回好奇心。无论是极光下的凛风，还是路边小店的一杯特调，都构成了我生命的独特底色。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- Testimonial Quote Section (testimonial-card) -->
+  <section class="container quote-section">
+    <div class="testimonial-card">
+      <div class="quote-icon">“</div>
+      <blockquote class="quote-text" 
+                  data-zh="旅行不是为了逃避生活，而是为了不让生活逃离我们。" 
+                  data-en="Travel isn't to escape life, but for life not to escape us.">
+        旅行不是为了逃避生活，而是为了不让生活逃离我们。
+      </blockquote>
+      <div class="quote-author" data-zh="— 吃米的旅行座右铭" data-en="— Chimi's Travel Motto">— 吃米的旅行座右铭</div>
+    </div>
+  </section>
 
+  <!-- Footer (footer) -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- Signature Footer Mountain SVG Illustration -->
+      <svg class="footer-mountain-svg" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L150 70L300 95L500 30L700 80L900 45L1050 75L1200 20V120H0Z" fill="#ebe6d6" opacity="0.6"/>
+        <path d="M0 120L200 85L450 40L650 90L850 50L1000 85L1200 40V120H0Z" fill="#f5f0e0" opacity="0.8"/>
+      </svg>
 
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4 data-zh="吃米的旅行日记" data-en="Chimi's Travel Log">吃米的旅行日记</h4>
+          <p data-zh="用照片与文字记录路上的风景与成长。基于 Clay Design Architecture 打造的现代双语旅行日志框架。"
+             data-en="Documenting journeys through photos & text. Built with Clay Design Architecture.">
+            用照片与文字记录路上的风景与成长。基于 Clay Design Architecture 打造的现代双语旅行日志框架。
+          </p>
+        </div>
 
+        <div class="footer-col">
+          <ul class="footer-nav-list">
+            <li><a href="#hero" data-zh="首页" data-en="Home">首页</a></li>
+            <li><a href="#stories" data-zh="精选故事" data-en="Featured Stories">精选故事</a></li>
+            <li><a href="#about" data-zh="关于吃米" data-en="About Chimi">关于吃米</a></li>
+          </ul>
+        </div>
+      </div>
 
-<section class="about">
+      <div class="footer-bottom">
+        <div data-zh="© 2026 吃米 (Chimi) · 保留所有权利" data-en="© 2026 Chimi. All rights reserved.">
+          © 2026 吃米 (Chimi) · 保留所有权利
+        </div>
+        <div data-zh="设计风格：Claymation Design System" data-en="Design: Claymation Design System">
+          设计风格：Claymation Design System
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<h2>
-About Me
-</h2>
-
-<p>
-Hi，我是吃米。<br>
-喜欢旅行、电影和音乐。<br>
-希望用照片收藏每一次遇见。
-</p>
-
-</section>
-
-
-
-
-<section class="travel">
-
-<h2>
-Travel Notes
-</h2>
-
-
-<div class="card">
-
-<img src="https://picsum.photos/600/400">
-
-<h3>
-Tokyo · Japan
-</h3>
-
-<p>
-在城市街道寻找属于自己的浪漫。
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="https://picsum.photos/600/401">
-
-<h3>
-Los Angeles · USA
-</h3>
-
-<p>
-阳光、公路和电影里的夏天。
-</p>
-
-</div>
-
-
-</section>
-
-
-
-<footer>
-
-© 2026 My Travel Diary
-
-</footer>
-
+  <!-- Photo Lightbox Modal (Enlarged Image on Top, Title & Description Below) -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button id="modal-close" class="lightbox-close" aria-label="Close modal">&times;</button>
+      <div class="lightbox-media">
+        <img id="modal-img" src="" alt="Travel photo enlarged" class="lightbox-img">
+      </div>
+      <div class="lightbox-body">
+        <div class="lightbox-meta">
+          <span id="modal-badge" class="badge-pill"></span>
+          <span id="modal-location" class="lightbox-location-tag"></span>
+          <span id="modal-date" class="lightbox-date-tag"></span>
+        </div>
+        <h3 id="modal-title" class="lightbox-title"></h3>
+        <p id="modal-desc" class="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>
+
