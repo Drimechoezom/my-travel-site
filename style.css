@@ -160,16 +160,16 @@ a:hover {
 }
 
 .brand-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--color-brand-pink);
-  border-radius: var(--radius-md);
-  display: flex;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 18px;
-  transform: rotate(-4deg);
+  color: var(--color-ink);
+  font-size: 22px;
+  transform: none;
 }
 
 .nav-links {
@@ -203,26 +203,28 @@ a:hover {
 
 /* Bilingual Language Toggle */
 .lang-toggle-btn {
-  background: var(--color-surface-card);
+  background: transparent;
   border: 1px solid var(--color-hairline);
   border-radius: var(--radius-pill);
-  padding: 4px 10px;
+  padding: 4px 12px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
-  color: var(--color-ink);
+  color: var(--color-muted);
   transition: all 0.2s ease;
 }
 
 .lang-toggle-btn:hover {
-  background: var(--color-surface-strong);
+  background: var(--color-surface-soft);
+  color: var(--color-ink);
 }
 
 .lang-toggle-btn span.active {
-  color: var(--color-brand-pink);
+  color: var(--color-ink);
+  font-weight: 700;
 }
 
 /* Buttons */
@@ -590,7 +592,9 @@ a:hover {
   width: 120px;
   height: 120px;
   border-radius: var(--radius-pill);
-  background: var(--color-brand-lavender);
+  background: #ffffff;
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 6px 16px rgba(10, 10, 10, 0.04);
   display: inline-flex;
   align-items: center;
   justify-content: center;
