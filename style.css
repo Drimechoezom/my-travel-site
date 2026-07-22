@@ -37,16 +37,14 @@ body {
 
 /* 关于我 */
 section {
-    max-width: 900px;
+    max-width: 720px;
     margin: auto;
     padding: 40px 25px;
 }
 
-
 h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: left;
 }
 
 
@@ -58,9 +56,10 @@ h2 {
 
 
 .travel-card img {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    width: 85%;
+    border-radius: 12px;
+    margin: auto;
+    display: block;
 }
 
 
