@@ -1,161 +1,93 @@
-/* 日系极简旅行风 */
-
-*{
-    box-sizing:border-box;
+body {
+    margin: 0;
+    background: #f8f6f1;
+    color: #222;
+    font-family: "Helvetica Neue", "PingFang SC", sans-serif;
 }
 
 
-body{
-
-    margin:0;
-
-    background:#f7f4ee;
-
-    color:#333;
-
-    font-family:
-    "Noto Serif SC",
-    "Hiragino Mincho ProN",
-    serif;
-
-    line-height:1.8;
-
+/* 顶部大图 */
+.hero img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
 }
 
 
-/* 首页 */
-
-.hero{
-
-    text-align:center;
-
-    padding:80px 25px 50px;
-
+/* 标题区域 */
+.hero {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
+.hero h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* 关于我 */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* 旅行照片卡片 */
+.travel-card {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+.travel-card img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+.travel-card h3 {
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+
+.travel-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* 手机适配 */
+@media(max-width:600px){
 
 .hero h1{
-
-    font-size:42px;
-
-    font-weight:500;
-
-    letter-spacing:4px;
-
-    margin-bottom:20px;
-
-}
-
-
-.hero p{
-
-    font-size:16px;
-
-    color:#777;
-
-}
-
-
-
-/* 图片 */
-
-.photo img{
-
-    width:100%;
-
-    height:70vh;
-
-    object-fit:cover;
-
-}
-
-
-
-/* 内容区域 */
-
-.about,
-.travel{
-
-    max-width:700px;
-
-    margin:auto;
-
-    padding:45px 25px;
-
+    font-size:32px;
 }
 
 
 h2{
-
-    font-size:25px;
-
-    font-weight:500;
-
-    letter-spacing:2px;
-
+    font-size:26px;
 }
 
 
-
-/* 旅行卡片 */
-
-.card{
-
-    background:white;
-
-    margin:40px 0;
-
-    padding-bottom:25px;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.05);
-
+section{
+    padding:25px 15px;
 }
-
-
-
-.card img{
-
-    width:100%;
-
-    display:block;
-
-}
-
-
-
-.card h3{
-
-    padding:0 25px;
-
-    font-size:20px;
-
-    font-weight:500;
-
-}
-
-
-
-.card p{
-
-    padding:0 25px;
-
-    color:#666;
-
-}
-
-
-
-/* 底部 */
-
-footer{
-
-    text-align:center;
-
-    padding:40px;
-
-    color:#999;
-
-    font-size:14px;
 
 }
