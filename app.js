@@ -23,94 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fallback initial dataset (used if fetch fails or running via file://)
   const fallbackStories = [
     {
-      "id": "tibet-lhasa",
-      "category": "tibet",
-      "badge": "藏地 · Tibet",
-      "date": "2025.10",
-      "img": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80",
-      "title": { "zh": "拉萨 · 朝圣者的日光之城", "en": "Lhasa · Sunlight City of Pilgrims" },
-      "desc": { "zh": "伫立在布达拉宫脚下，转经筒的声响与藏香气味弥漫在八廓街的阳光中。于高原无垠的蓝天下，感受最纯粹的虔诚与震撼。", "en": "Standing below the Potala Palace while prayer wheels spin through Barkhor Street's golden sunlight beneath endless plateau skies." },
-      "location": { "zh": "📍 西藏 · 拉萨布达拉宫", "en": "📍 Potala Palace, Lhasa" }
-    },
-    {
-      "id": "shanghai-bund",
-      "category": "shanghai",
-      "badge": "上海 · Shanghai",
-      "date": "2025.08",
-      "img": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=80",
-      "title": { "zh": "上海 · 梧桐树下与黄浦江畔", "en": "Shanghai · Platanes & Huangpu Skyline" },
-      "desc": { "zh": "漫步在武康路的法式梧桐树荫里，看复古洋房与摩登天际线交织。陆家嘴的璀璨灯火与黄浦江的风，述说着海派都市的浪漫。", "en": "Strolling under plane trees in the French Concession while Lujiazui lights reflect on the gentle Huangpu River breezes." },
-      "location": { "zh": "🏙️ 上海 · 武康路与外滩", "en": "🏙️ Wukang Rd & The Bund, Shanghai" }
-    },
-    {
-      "id": "japan-tokyo",
-      "category": "japan",
-      "badge": "日本 · Japan",
-      "date": "2025.05",
-      "img": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80",
-      "title": { "zh": "东京 · 涩谷霓虹与浅草古韵", "en": "Tokyo · Shibuya Lights & Asakusa" },
-      "desc": { "zh": "在霓虹闪烁的涩谷十字路口与静谧浅草寺之间穿行。夜幕下的东京，光影交错如同一首流动的交响诗。", "en": "Wandering from Shibuya's neon crossing to tranquil temple halls. Tokyo at night is a liquid symphony of light and shadows." },
-      "location": { "zh": "🗼 东京都 · 涩谷与浅草", "en": "🗼 Shibuya & Asakusa, Tokyo" }
-    },
-    {
-      "id": "mainland-hangzhou",
+      "id": "tianjin-beichen-2026",
       "category": "mainland",
       "badge": "内地 · Mainland",
-      "date": "2024.11",
-      "img": "https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?w=800&q=80",
-      "title": { "zh": "杭州 · 烟雨江南与西湖晨雾", "en": "Hangzhou · Misty West Lake & Longjing" },
-      "desc": { "zh": "乘一叶扁舟划过西湖烟雨，漫步龙井茶园与九溪十八涧。江南水乡的委婉温润，浸润在每一抹绿意与雨丝之中。", "en": "Drifting past mist-veiled West Lake waters and walking through Longjing tea hills bathed in gentle spring rains." },
-      "location": { "zh": "🍵 浙江 · 杭州西湖", "en": "🍵 West Lake, Hangzhou" }
+      "date": "2026.07",
+      "img": "assets/stories/tianjin-beichen-2026.jpg",
+      "title": { "zh": "北辰 · 柳荫雨后的夏日街角", "en": "Beichen · Summer Corner Beneath Willows After Rain" },
+      "desc": { "zh": "七月的北辰，骤雨初歇。垂柳如帘，在逆光中投下斑驳光影，湿漉漉的柏油路面映着天光云影。一辆金色轿车驶过泛光的路面，电动车静静停靠在树旁，空气中弥漫着雨后泥土与树叶的清冽气息，夏日的燥热被一场雨轻轻洗去。", "en": "A summer downpour has just subsided in Beichen. Weeping willow branches curtain the scene, dappled backlight filtering through as wet asphalt mirrors the sky above. A golden sedan glides across the glistening road while an e-bike rests beside the tree, the air crisp with the scent of rain-soaked earth and foliage, summer's heat gently washed away." },
+      "location": { "zh": "📍 天津 · 北辰区", "en": "📍 Beichen District, Tianjin" }
     },
     {
-      "id": "tibet-namtso",
+      "id": "tibet-sogxian-valley-2025",
       "category": "tibet",
       "badge": "藏地 · Tibet",
-      "date": "2024.09",
-      "img": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-      "title": { "zh": "纳木错 · 圣湖星空与念青唐古拉", "en": "Namtso Lake · Holy Water & Starry Sky" },
-      "desc": { "zh": "海拔4700米的圣湖边，倒映着巍峨的念青唐古拉雪山。当夜幕降临，漫天银河悬挂于圣湖之上，寂静得只能听见风声。", "en": "Reflecting snow peaks at 4,700m elevation. As night descends, the Milky Way hangs over holy waters in serene stillness." },
-      "location": { "zh": "🌌 西藏 · 纳木错圣湖", "en": "🌌 Namtso Lake, Tibet" }
+      "date": "2025.07",
+      "img": "assets/stories/tibet-nagqu-suo-1.jpg",
+      "title": { "zh": "索县 · 藏东翠谷与冰川河畔", "en": "Sog County · Emerald Valley & Glacial River in Eastern Tibet" },
+      "desc": { "zh": "七月的索县，藏东峡谷满目苍翠。云杉覆满陡峭山坡，青稞田在谷中铺成层层绿毯，赭色的冰川融水河奔腾而过。河滩碎石上几只黑鸟驻足停歇，坡上藏式小屋静静伫立在白云蓝天之下，时光仿佛在此刻凝固。", "en": "July in Sog County, where eastern Tibet's gorges burst with vivid green. Spruce forests cloak the steep slopes while highland barley fields terrace the valley in emerald layers, the ochre glacial melt river rushing past. Black birds pause on the gravel shore as a Tibetan homestead rests beneath towering cumulus clouds, time standing still in this highland sanctuary." },
+      "location": { "zh": "🏔️ 西藏 · 那曲索县", "en": "🏔️ Sog County, Nagqu, Tibet" }
     },
     {
-      "id": "japan-kyoto",
-      "category": "japan",
-      "badge": "日本 · Japan",
-      "date": "2024.04",
-      "img": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
-      "title": { "zh": "京都 · 岚山樱雨与千本鸟居", "en": "Kyoto · Arashiyama Cherry Blossoms" },
-      "desc": { "zh": "漫步在岚山竹林与伏见稻荷大社的朱红鸟居间。风吹樱落，鸭川水长，时间在这里放慢了脚步。", "en": "Walking through bamboo groves and vermilion Fushimi Inari gates as cherry blossom petals float softly in Kamogawa breezes." },
-      "location": { "zh": "🌸 京都府 · 岚山与伏见", "en": "🌸 Arashiyama & Fushimi, Kyoto" }
-    },
-    {
-      "id": "shanghai-coffee",
-      "category": "shanghai",
-      "badge": "上海 · Shanghai",
-      "date": "2023.11",
-      "img": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80",
-      "title": { "zh": "上海 · 街角咖啡馆与老洋房日常", "en": "Shanghai · Vintage Cafés & Lane Houses" },
-      "desc": { "zh": "安福路与巨鹿路的浓缩咖啡香气，弄堂深处的光影与黑胶唱片。于市井烟火与复古风情中搜集都市里的慢节奏感。", "en": "Aroma of espresso along Anfu Road lanes, vinyl records and afternoon shadows capturing Shanghai's nostalgic urban rhythms." },
-      "location": { "zh": "☕ 上海 · 安福路与巨鹿路", "en": "☕ Anfu Rd & Julu Rd, Shanghai" }
-    },
-    {
-      "id": "mainland-dunhuang",
-      "category": "mainland",
-      "badge": "内地 · Mainland",
-      "date": "2023.07",
-      "img": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80",
-      "title": { "zh": "敦煌 · 莫高窟壁画与鸣沙山骆铃", "en": "Dunhuang · Mogao Caves & Singing Sand Dunes" },
-      "desc": { "zh": "大漠孤烟直，长河落日圆。莫高窟千年壁画的绚烂与鸣沙山月牙泉的落日余晖，述说着丝绸之路的浩瀚文明。", "en": "Golden suns over Silk Road sand dunes, ancient Mogao frescoes and camel bells echoing across Crescent Lake." },
-      "location": { "zh": "🐪 甘肃 · 敦煌鸣沙山", "en": "🐪 Mingsha Mountain, Dunhuang" }
-    },
-    {
-      "id": "japan-fuji",
-      "category": "japan",
-      "badge": "日本 · Japan",
-      "date": "2023.02",
-      "img": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=800&q=80",
-      "title": { "zh": "富士山 · 河口湖雪景与山麓晚霞", "en": "Mt. Fuji · Lake Kawaguchiko Snow" },
-      "desc": { "zh": "冬日河口湖畔，清晨的富士山冠雪在澄澈湖面留下完美倒影。夕阳西下，粉蓝色的晚霞温柔染红整片山麓。", "en": "Winter reflections across Lake Kawaguchiko as Mt. Fuji's snow peak glows in soft pastel twilight." },
-      "location": { "zh": "🗻 山梨县 · 富士河口湖", "en": "🗻 Lake Kawaguchiko, Mt. Fuji" }
+      "id": "tibet-sogxian-eagle-2025",
+      "category": "tibet",
+      "badge": "藏地 · Tibet",
+      "date": "2025.07",
+      "img": "assets/stories/tibet-nagqu-suo-2.jpg",
+      "title": { "zh": "索县 · 苍穹之上的高原神鹰", "en": "Sog County · Raptor Soaring the High Plateau Sky" },
+      "desc": { "zh": "索县的天蓝得像一面倒置的深海，几缕流云在天际悠然舒展。一只雄鹰展开双翼在高空盘旋，深色剪影映在蓝宝石般的苍穹上，仿佛是这片高原天空真正的主人。海拔四千多米的藏北大地，仰望苍穹间，心也随它一同翱翔。", "en": "The sky over Sog County is an inverted ocean of sapphire, streaked with drifting wisps of cloud. An eagle circles high above with wings fully spread, its dark silhouette etched against the azure as if it were sovereign of these plateau heavens. At over 4,000 meters on the northern Tibetan plateau, gazing upward sends the heart soaring alongside it." },
+      "location": { "zh": "🦅 西藏 · 那曲索县", "en": "🦅 Sog County, Nagqu, Tibet" }
     }
   ];
 
@@ -293,5 +233,3 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
-
-
