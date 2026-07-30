@@ -476,8 +476,12 @@ a:hover {
 
 .waterfall-item {
   break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   margin-bottom: var(--spacing-xl);
-  display: block;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
 }
 
 .waterfall-card {
